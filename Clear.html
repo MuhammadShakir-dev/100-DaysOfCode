@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clear</title>
+    <!--What is Clear?
+ 💡 The clear property controls the flow next to floated elements.
+    The clear property specifies what should happen with the element that is next to a floating element.
+-->
+    <style>
+      .box1 {
+        width: 300px;
+        border: 1px solid;
+        float:left;
+        box-sizing: border-box;
+      }
+
+      .box2 {
+        width: 300px;
+        border: 1px solid;
+        float:right;
+        box-sizing: border-box;
+      }
+
+      .box3 {
+        width: 100%;
+        border: 1px solid;
+        clear:both; 
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla et, ea
+      labore temporibus rerum id dicta? Quod facilis magnam veritatis, possimus
+      fugit, tenetur beatae quidem omnis aperiam obcaecati at sunt.
+    </div>
+
+    <div class="box2">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam eum
+      adipisci accusamus dicta eaque odio consectetur consequuntur dolor
+      reprehenderit porro? Aperiam corrupti facere iure nulla! Totam, facere.
+      Magnam, cum facere.
+    </div>
+    <div class="box3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, libero
+      sunt perferendis tempore distinctio dicta, non veniam quaerat voluptatibus
+      voluptas natus dolorem aspernatur ipsam quae incidunt commodi, assumenda
+      ex nobis.
+    </div>
+  </body>
+</html>

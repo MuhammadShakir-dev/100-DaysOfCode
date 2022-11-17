@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Wrap & Break</title>
+    <!--What is Word Wrap & Word Break?
+💡 The word-break property in CSS is used to specify how a word should be broken or split
+    when reaching the end of a line.
+💡 The word-wrap property is used to split/break long words and wrap them into the next line.
+-->
+
+    <style>
+      .box1 {
+        width: 200px;
+        border: 1px solid;
+        word-wrap: break-word;
+      }
+
+      .box2 {
+        width: 200px;
+        border: 1px solid;
+        word-break: break-all;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      Helllllllllllllllllllllllllllllllllllllllllo World!!!
+    </div>
+
+    <div class="box2">
+      HTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTML -----5 is for documentation
+      of web pageeeeeeeeeeee.!!
+    </div>
+  </body>
+</html>
