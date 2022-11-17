@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List Style</title>
+    <!--What is List Style in CSS?
+        List style is used for styling list in CSS.
+
+        List Style has some Properties.
+        1.List-style-iamge, 2.List-style-position, 3.List-style-type, 4.List-style
+    
+    -->
+
+    <style>
+      .box1 {
+        border: 1px solid;
+        width: 500px;
+        margin: 10% auto;
+        box-sizing: border-box;
+      }
+      .box1 ul {
+        list-style: circle;
+        list-style-position: inside;
+      }
+
+      .box2 {
+        border: 1px solid;
+        width: 500px;
+        margin: 2% auto;
+        box-sizing: border-box;
+      }
+      .box2 ol{
+        list-style-position: inside;
+        list-style-image: url("bullet\ \(1\).png");
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      <h1>Front-end</h1>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+      </ul>
+    </div>
+    <div class="box2">
+      <h2>Back-end</h2>
+      <ol>
+        <li>NODE JS</li>
+        <li>EXPRESS JS</li>
+        <li>MONGO DB</li>
+      </ol>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Column Count Properties</title>
+    <!--What is Column Count in CSS?
+        The column-count CSS property breaks an element's content into the specified number of columns.
+
+        Column Count has some properties that I have mentioned below!
+        1.Column-count, 2.Column-gap, 3.Column-rule, 4.Column-rule-width, 5.Column-rule-style ,
+        6.Column-rule-color ,7.Column-width, 8.Column-span, 9.Column-fill
+    -->
+    <style>
+        .box1{
+            width:800px;
+            margin:10% auto 0% auto;
+            padding: 8px;
+            border: 1px solid;
+            box-sizing: border-box;
+            column-count: 3;
+            column-gap: 30px;
+            column-rule: 2px solid grey;
+            font-size: 17px;
+            text-align: center;
+        }
+
+        h1{
+            column-span:all;
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      <h1>100 Days Of Code</h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+      repellat rerum odit, molestias tempore iusto, ad repellendus earum fugit
+      sapiente, consequuntur doloribus? Culpa, modi amet! Dignissimos, sed
+      deserunt? Totam, nam! Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Fuga similique deserunt, minus dolorem doloribus debitis eos tempore
+      dolores repellendus corporis enim, cumque placeat error architecto non
+      maiores rem temporibus fugiat! Lorem ipsum dolor sit, amet consectetur
+      adipisicing elit. Cum vitae hic laboriosam nam ex qui est iusto quam harum
+      ullam eum quis unde fugit officia non, nesciunt aliquid eaque quibusdam.
+    </div>
+  </body>
+</html>
