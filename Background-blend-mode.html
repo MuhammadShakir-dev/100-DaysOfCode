@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bg Blend Mode CSS</title>
+    <!--
+        Backgroud Blend Mode CSS? : if you set a background color and image at same time and want to show mixture of both then use this.
+        Values? : Nomral, Multiply, Screen, Darken, Lighten, Overlay, Hue, Stautation etc.
+    -->
+    <style>
+        .container1{
+            width: 400px;
+            height: 400px;
+            border: 1px solid;
+            margin: 0% auto;
+            background-image:linear-gradient(to right, Blue , purple), url("mac-os-x-os-x-big-sur-hd-wallpaper-91240226fed57e734e5fa0259c8f9866.jpg");
+            background-size: cover;
+            background-blend-mode: screen;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        }
+        .container1 h1{
+            text-align: center;
+            color: white;
+        }
+        .container1 p{
+            font-size: small;
+            padding: 10px;
+            text-align: center;
+            color: black;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container1">
+      <h1>Im Blend...!</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit,
+        nam! Ullam sequi eveniet officia at expedita pariatur rerum unde
+        assumenda, totam libero consequuntur temporibus! Facilis, dolorum ab.
+        Illo, numquam consectetur!
+      </p>
+    </div>
+  </body>
+</html>
