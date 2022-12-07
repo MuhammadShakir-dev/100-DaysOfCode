@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Size CSS</title>
+    <!--
+        CSS Background-Size has some values like.
+        1. Auto(Default)
+        2. Lenght(px)
+        3. Percentage(%)
+        4. Cover
+        5. Contain
+
+        you can set the background value in px or in % like :
+        background-size:150px 150px; or background-size:20% 50%;
+
+        Cover covers all the space that is avaliable in the container.
+
+        Contain try to cover all spaces the which best fts to the image width.
+    -->
+    <style>
+        .container{
+            width: 500px;
+            height: 300px;
+            margin-left:auto;
+            margin-right: auto;
+            border:2px solid black;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            background-image: url("Ba.jpg");
+            background-size: contain;
+        }
+
+        .container p{
+            text-align: center;
+            padding: 10px;
+        }
+
+        .container h1{
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <h1>Hello i'm Contain</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+        natus ullam nobis veritatis non nulla deserunt. A pariatur vel
+        voluptates. Cum eligendi, modi architecto aspernatur excepturi veniam ex
+        earum reiciendis.
+      </p>
+    </div>
+  </body>
+</html>
