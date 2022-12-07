@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bg Origin CSS</title>
+    <!--
+        Backgoround Origin CSS has three values.
+        1. Padding Box
+        2. Boder Box
+        3. Cotent Box
+
+        Note: Padding box is a default value.
+
+        Backgound Orgin? : Defines the stating point of your Background.
+        Padding Box? : Starts your  backgoround from the padding area.
+        Border Bo? : Start your background from the border area.
+        Content Box? : Start your background from the Content are.
+    -->
+    <style>
+        .container {
+            width: 500px;
+            display: inline-block;
+            padding: 5px;
+            border: 2px solid;
+            background-image: url("dev.jpg");
+            background-origin: padding-box;
+            background-size: 150px 100px;
+        }
+
+        .container p {
+            text-align: center;
+            color: white;
+        }
+
+        .container h1 {
+            text-align: center;
+            color: white;
+        }
+
+        .container2 {
+            width: 500px;
+            display: inline-block;
+            padding: 5px;
+            border: 2px solid;
+            background-image: url("dev.jpg");
+            background-origin: border-box;
+            background-size: 150px 100px;
+
+        }
+
+        .container2 p {
+            text-align: center;
+            color: white;
+        }
+
+        .container2 h1 {
+            text-align: center;
+            color: white;
+        }
+
+        .container3 {
+            width: 500px;
+            display: inline-block;
+            padding: 10px;
+            margin-top: 20px;
+            border: 2px solid grey;
+            background-image: url("dev.jpg");
+            background-origin: content-box;
+            background-size: 150px 100px;
+
+        }
+
+        .container3 p {
+            text-align: center;
+            color: white;
+        }
+
+        .container3 h1 {
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Padding Box Container start-->
+    <div class="container">
+        <h1>Hello I'm Padding Box</h1>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias veniam
+            quis itaque consectetur dolores expedita est officia aspernatur
+            doloribus natus excepturi iure ab ad repudiandae sequi rerum quasi, ea
+            ducimus?
+        </p>
+    </div>
+    <!--Padding Box Container end-->
+
+    <!--Border Box container start-->
+    <div class="container2">
+        <h1>Hello I'm Border Box</h1>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+            fugit rem corporis aspernatur ullam quas odit sint? Eius dolorem ratione
+            dicta repellendus excepturi totam facere deleniti. Porro sint autem
+            dolor!
+        </p>
+    </div>
+    <!--Border Box container end-->
+
+    <!--Cotent Box container start-->
+    <div class="container3">
+        <h1>Hello I'm Content Box</h1>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde aut
+            voluptates reprehenderit dolore ducimus numquam possimus doloremque
+            beatae veniam! Deserunt esse sed odit eos blanditiis veniam
+            necessitatibus tenetur a quasi?
+        </p>
+    </div>
+    <!--Content Box container end-->
+</body>
+
+</html>
