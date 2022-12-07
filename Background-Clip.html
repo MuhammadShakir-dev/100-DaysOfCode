@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bg Clip CSS</title>
+    <!--
+        Background Clip CSS? : Work same as Background Orgin but it's relation is with background color not with
+        background image.
+
+        Values? : same as Background Origin but it has one new value called Text.
+
+        text? : it's a new value comes in CSS3 only work in latest browers with the help of webkit.
+        Note. : for using text you should set you text color to "Transparent".
+    -->
+    <style>
+        body {
+            background-color: lightyellow;
+        }
+
+        .container1 {
+            width: 300px;
+            display: inline-block;
+            box-sizing: border-box;
+            border: 3px solid;
+            padding: 10px;
+            margin: 0px 20px;
+            background-color: white;
+            background-clip: padding-box;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        .container1 h1 {
+            text-align: center;
+        }
+
+        .container1 p {
+            text-align: center;
+        }
+
+        .container2 {
+            width: 300px;
+            display: inline-block;
+            box-sizing: border-box;
+            border: 3px dashed;
+            padding: 10px;
+            margin: 0px 20px;
+            background-color: lightgreen;
+            background-clip: border-box;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        .container2 h1 {
+            text-align: center;
+        }
+
+        .container2 p {
+            text-align: center;
+        }
+
+        .container3 {
+            width: 300px;
+            display: inline-block;
+            box-sizing: border-box;
+            border: 3px solid;
+            padding: 10px;
+            margin: 0px 20px;
+            background-color: lightcoral;
+            background-clip: content-box;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        .container3 h1 {
+            text-align: center;
+        }
+
+        .container3 p {
+            text-align: center;
+        }
+
+        .container4 {
+            width: 300px;
+            display: inline-block;
+            box-sizing: border-box;
+            border: 3px solid;
+            padding: 10px;
+            margin: 0px 20px;
+            background-color: lightskyblue;
+            -webkit-background-clip: text;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        .container4 h1 {
+            text-align: center;
+            color: transparent;
+        }
+
+        .container4 p {
+            text-align: center;
+            color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <h1>I'm Padding Box</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero culpa
+            excepturi quos expedita, ex nemo nobis reiciendis perferendis doloribus
+            saepe doloremque cumque numquam dolorem. Porro, placeat! Laudantium
+            minus reprehenderit suscipit.
+        </p>
+    </div>
+
+    <div class="container2">
+        <h1>I'm Border Box</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero culpa
+            excepturi quos expedita, ex nemo nobis reiciendis perferendis doloribus
+            saepe doloremque cumque numquam dolorem. Porro, placeat! Laudantium
+            minus reprehenderit suscipit.
+        </p>
+    </div>
+
+    <div class="container3">
+        <h1>I'm Content Box</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero culpa
+            excepturi quos expedita, ex nemo nobis reiciendis perferendis doloribus
+            saepe doloremque cumque numquam dolorem. Porro, placeat! Laudantium
+            minus reprehenderit suscipit.
+        </p>
+    </div>
+
+    <div class="container4">
+        <h1>I'm Test Box</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero culpa
+            excepturi quos expedita, ex nemo nobis reiciendis perferendis doloribus
+            saepe doloremque cumque numquam dolorem. Porro, placeat! Laudantium
+            minus reprehenderit suscipit.
+        </p>
+    </div>
+</body>
+
+</html>
