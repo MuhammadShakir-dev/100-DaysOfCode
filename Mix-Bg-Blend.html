@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mix Bg Blend CSS</title>
+    <!--
+        Mix Bg Blend CSS? : Same as Bg Blend but has one diff that it can work with only one thing like a div, text, color in the bg.
+        Values? : Same as Bg Blend Mode
+    -->
+    <style>
+        .container1 {
+            width: 500px;
+            height: 350px;
+            box-sizing: border-box;
+            background-image: url("mac-os-x-os-x-big-sur-hd-wallpaper-91240226fed57e734e5fa0259c8f9866.jpg");
+            background-size: cover;
+            margin: 0% auto;
+            border: 1px solid;
+        }
+
+        .container1 h1 {
+            background-image: linear-gradient(to right, black, grey);
+            mix-blend-mode: darken;
+            color: white;
+            text-align: center;
+            font-family: "Courier New", Courier, monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <h1>Mix BG Blend</h1>
+    </div>
+</body>
+
+</html>
