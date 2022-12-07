@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mix Bg Blend CSS</title>
+    <!--
+        Mix Bg Blend CSS? : Same as Bg Blend but has one diff that it can work with only one thing like a div, text, color in the bg.
+        Values? : Same as Bg Blend Mode
+    -->
+    <style>
+        .container1 {
+            width: 500px;
+            height: 350px;
+            box-sizing: border-box;
+            background-image: url("mac.jpg");
+            background-size: cover;
+            border: 1px solid;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            float: left;
+            margin-right: 20px;
+
+        }
+
+        .container1 h1 {
+            background-image: linear-gradient(to right, black, grey);
+            mix-blend-mode: darken;
+            color: white;
+            text-align: center;
+            font-family: "Courier New", Courier, monospace;
+        }
+
+        .container2{
+            width: 500px;
+            height: 350px;
+            box-sizing: border-box;
+            border: 1px solid;
+            background-color: purple;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            float: left;
+        }
+        .container2 img{
+            width: 500px;
+            height: 350px;
+            mix-blend-mode: lighten;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--Container 1-->
+    <div class="container1">
+        <h1>Mix BG Blend</h1>
+    </div>
+
+    <!--Container 2-->
+    <div class="container2">
+        <img src="mac.jpg" alt="">
+    </div>
+</body>
+
+</html>
