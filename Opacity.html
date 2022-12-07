@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opacity CSS</title>
+    <!--
+        Opacity CSS?: Show the transparency 
+        values? : 2 values 1. Opacity , 2. rgba
+
+        Note: Opacity transparent the bg inclduing the text and images. but rgba trasnparent only the background.
+    -->
+    <style>
+        .container1 {
+            width: 500px;
+            box-sizing: border-box;
+            border: 2px solid;
+            display: inline-block;
+            padding: 10px;
+            background-color: blue;
+            opacity: 0.5;
+        }
+
+        .img-container {
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            border: 1px solid;
+        }
+
+        .img-container img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .containe1 p {
+            text-align: left;
+            color: white;
+        }
+
+        .container2 {
+            width: 500px;
+            box-sizing: border-box;
+            border: 2px solid;
+            display: inline-block;
+            padding: 10px;
+            background-color: rgba(255, 0, 0, 0.4);
+        }
+
+        .img-container-2 {
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            border: 1px solid;
+        }
+
+        .img-container-2 img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .containe2 p {
+            text-align: left;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Opacity container-->
+    <div class="container1">
+        <div class="img-container">
+            <img src="dev.jpg" alt="">
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+            officia quisquam eligendi asperiores ipsa tempore, eum in. Sapiente
+            velit iusto non quod vitae illo, obcaecati architecto ratione, maxime
+            incidunt rerum.
+        </p>
+    </div>
+
+    <!-- Rgba container-->
+    <div class="container2">
+        <div class="img-container-2">
+            <img src="dev.jpg" alt="">
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+            officia quisquam eligendi asperiores ipsa tempore, eum in. Sapiente
+            velit iusto non quod vitae illo, obcaecati architecto ratione, maxime
+            incidunt rerum.
+        </p>
+    </div>
+</body>
+
+</html>
